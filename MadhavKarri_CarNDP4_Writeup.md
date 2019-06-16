@@ -1,47 +1,49 @@
-# **Behavioral Cloning** 
+# **Self-Driving Car Engineer Nanodegree**
+# **Project4: Behavioral Cloning**
 
-## Writeup Template
+## MK
 
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
+Overview
 ---
+In this project, use deep neural networks and convolutional neural networks to classify traffic signs. Train and validate a model so it can classify traffic sign images using the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). Use the trained model to predict and classify German traffic sign images from the web.
 
-**Behavioral Cloning Project**
-
-The goals / steps of this project are the following:
-* Use the simulator to collect data of good driving behavior
-* Build, a convolution neural network in Keras that predicts steering angles from images
+The Project
+---
+The goals/steps for this project:
+* Use simulator to collect data for good driving behavior
+* Build convolution neural network in Keras, that predicts steering angles from images
 * Train and validate the model with a training and validation set
 * Test that the model successfully drives around track one without leaving the road
-* Summarize the results with a written report
 
 
 [//]: # (Image References)
 
-[image1]: ./examples/placeholder.png "Model Visualization"
-[image2]: ./examples/placeholder.png "Grayscaling"
-[image3]: ./examples/placeholder_small.png "Recovery Image"
-[image4]: ./examples/placeholder_small.png "Recovery Image"
-[image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./examples/placeholder_small.png "Flipped Image"
+[image1]: ./Writeup_IV/I1_DataSummary.png "I1_DataSummary"
+[image2]: ./Writeup_IV/I2_DVE1.png "I2_DVE1"
+[image3]: ./Writeup_IV/I3_SCTrain.png "I3_SCTrain"
+[image4]: ./Writeup_IV/I3_SCValid.png "I3_SCValid"
+[image5]: ./Writeup_IV/I3_SCTest.png "I3_SCTest"
+[image6]: ./Writeup_IV/I4_CNNArch.png "I4_CNNArch"
+[image7]: ./Writeup_IV/I5_CNNArch.png "I5_CNNArch"
 
-## Rubric Points
-### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
+
+## [Rubric](https://review.udacity.com/#!/rubrics/432/view) Points
+
+### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.
 
 ---
 ### Files Submitted & Code Quality
 
 #### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
 
-My project includes the following files:
+Project includes the following files:
 * model.py containing the script to create and train the model
 * drive.py for driving the car in autonomous mode
 * model.h5 containing a trained convolution neural network 
-* writeup_report.md or writeup_report.pdf summarizing the results
+* MadhavKarri_CarNDP4_Writeup.md summarizes the results
 
 #### 2. Submission includes functional code
-Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
+Using the Udacity provided simulator and drive.py file, the car can be driven autonomously around the track by executing 
 ```sh
 python drive.py model.h5
 ```
