@@ -5,7 +5,7 @@
 
 Overview
 ---
-Develop a convolutional neural networks using keras to clone driving behavior. Train, validate and test a model using Keras. The model will output a steering angle to an autonomous vehicle.
+Develop a convolutional neural network model using keras to clone driving behavior. Train, validate and test a model using Keras. The model will output a steering angle to an autonomous vehicle.
 
 The Project
 ---
@@ -18,13 +18,8 @@ The goals/steps for this project:
 
 [//]: # (Image References)
 
-[image1]: ./Writeup_IV/I1_DataSummary.png "I1_DataSummary"
-[image2]: ./Writeup_IV/I2_DVE1.png "I2_DVE1"
-[image3]: ./Writeup_IV/I3_SCTrain.png "I3_SCTrain"
-[image4]: ./Writeup_IV/I3_SCValid.png "I3_SCValid"
-[image5]: ./Writeup_IV/I3_SCTest.png "I3_SCTest"
-[image6]: ./Writeup_IV/I4_CNNArch.png "I4_CNNArch"
-[image7]: ./Writeup_IV/I5_CNNArch.png "I5_CNNArch"
+[image1]: ./Writeup_IV/CNNModelSummary.png "CNNModelSummary"
+[image2]: ./Writeup_IV/CNNArch.png "CNNArch"
 
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/432/view) Points
@@ -54,32 +49,25 @@ The model.py file contains the code for the following set of tasks.
 * Load all images and steering angles from memory
 * Data augumentation using vertical flip
 * Data normilization and centering
-* Image cropping to retain, only pixels that contain useful information 
-* Training, validation, and saving the convolution neural network model. 
+* Image cropping to retain, only pixels that contain useful information
+* Define and build convolution neural network model
+* Training, validation, and saving the model
 
 ### Model Architecture and Training Strategy
 
 #### 1. Model architecture 
 
-My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
+Model consists of a convolution neural network with the following set of features 
+![][image1]
+![][image2]
 
-The model includes RELU layers to introduce nonlinearity (code line 20), and the data is normalized in the model using a Keras lambda layer (code line 18). 
+#### 2. Model parameter tuning
 
-#### 2. Attempts to reduce overfitting in the model
+The model used an adam optimizer, so the learning rate was not tuned manually
 
-The model contains dropout layers in order to reduce overfitting (model.py lines 21). 
+#### 3. Appropriate training data
 
-The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
-
-#### 3. Model parameter tuning
-
-The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 25).
-
-#### 4. Appropriate training data
-
-Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road ... 
-
-For details about how I created the training data, see the next section. 
+Training data was collected to keep the vehicle driving on the road. Used only center lane driving. For details about how I created the training data, see the next section. 
 
 ### Model Architecture and Training Strategy
 
@@ -99,13 +87,6 @@ The final step was to run the simulator to see how well the car was driving arou
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
-#### 2. Final Model Architecture
-
-The final model architecture (model.py lines 18-24) consisted of a convolution neural network with the following layers and layer sizes ...
-
-Here is a visualization of the architecture (note: visualizing the architecture is optional according to the project rubric)
-
-![alt text][image1]
 
 #### 3. Creation of the Training Set & Training Process
 
