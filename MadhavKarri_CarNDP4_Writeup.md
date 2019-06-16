@@ -61,6 +61,9 @@ Model consists of a convolution neural network with the following set of feature
 ![][image1]
 ![][image2]
 
+The above model has been replicated and based on the model developed by nvidia for similar work [Link](https://devblogs.nvidia.com/deep-learning-self-driving-cars/).
+
+
 #### 2. Model parameter tuning
 
 The model used an adam optimizer, so the learning rate was not tuned manually
@@ -70,8 +73,6 @@ The model used an adam optimizer, so the learning rate was not tuned manually
 Training data was collected to keep the vehicle driving on the road. Used only center lane driving. For details about how I created the training data, see the next section. 
 
 ### Model Architecture and Training Strategy
-
-#### 1. Solution Design Approach
 
 The overall strategy for deriving a model architecture was to ...
 
@@ -88,7 +89,7 @@ The final step was to run the simulator to see how well the car was driving arou
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
 
-#### 3. Creation of the Training Set & Training Process
+#### Creation of the Training Set & Training Process
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
