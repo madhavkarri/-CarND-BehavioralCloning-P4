@@ -61,9 +61,6 @@ Model consists of a convolution neural network with the following set of feature
 ![][image1]
 ![][image2]
 
-The above model has been replicated and based on the model developed by nvidia for similar work [Link](https://devblogs.nvidia.com/deep-learning-self-driving-cars/).
-
-
 #### 2. Model parameter tuning
 
 The model used an adam optimizer, so the learning rate was not tuned manually
@@ -74,24 +71,20 @@ Training data was collected to keep the vehicle driving on the road. Used only c
 
 ### Model Architecture and Training Strategy
 
-The overall strategy for deriving a model architecture was to ...
+The CNN model used in this project has been replicated and based on the model developed by nvidia for similar work [Link](https://devblogs.nvidia.com/deep-learning-self-driving-cars/).
 
-My first step was to use a convolution neural network model similar to the ... I thought this model might be appropriate because ...
+In order to gauge how well the model was working, image and steering angle data was split into a training and validation sets with a split ratio of 80% and 20% respectively. During the frist attempt itself, model had a low mean squared error on both the training and validation sets. Further, the validation error was lower than the training error. 
 
-In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I found that my first model had a low mean squared error on the training set but a high mean squared error on the validation set. This implied that the model was overfitting. 
-
-To combat the overfitting, I modified the model so that ...
-
-Then I ... 
-
-The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track... to improve the driving behavior in these cases, I ....
+Final step was to run the simulator to see how well the car was driving around track one. There was only a single loctaion where the vehicle fell off the track. To improve driving behavior for this specific case, additional data was collected in the vicnity of this specific location.
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
 
 #### Creation of the Training Set & Training Process
 
-To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
+To capture good driving behavior, recorded 8 laps on track one using center lane driving in forward direction. 
+
+Here is an example image of center lane driving:
 
 ![alt text][image2]
 
