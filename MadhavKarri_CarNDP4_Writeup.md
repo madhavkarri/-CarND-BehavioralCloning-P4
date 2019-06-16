@@ -87,17 +87,17 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 To capture good driving behavior the following steps were implemented for data collection:
 * Recorded 8 laps on track one using center lane driving in forward direction
 * Recorded 8 laps on track one using center lane driving in reverse direction. To minimize left-turn bias in the data.
-* Further data augumentation was performed using "cv2" vertical flip on all of the images.
+* Further data augumentation was performed using "cv2" vertical flip on all of the images
 
-Below are few examples of center lane driving in forward direction
+Below are few random examples of center lane driving in forward direction
 
 ![][image3]
 
 
-Below are few examples of center lane driving in reverse direction
+Below are few random examples of center lane driving in reverse direction
 
 ![][image4]
 
 After collection and data augumentation process, a total of 34,660 number of data points represented the complete data set. Finally, the dataset was shuffled randomly and allocated 20% of the data into a validation set. 
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was determined to be about 5. I used an adam optimizer so that manually training the learning rate wasn't necessary.
+Used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was determined to be about 5. Used an adam optimizer so that manually training the learning rate wasn't necessary.
