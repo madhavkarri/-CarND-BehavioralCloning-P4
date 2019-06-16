@@ -20,6 +20,8 @@ The goals/steps for this project:
 
 [image1]: ./Writeup_IV/CNNModelSummary.png "CNNModelSummary"
 [image2]: ./Writeup_IV/CNNArch.png "CNNArch"
+[image3]: ./Writeup_IV/CLD_Fwd.png "CLD_Fwd"
+[image4]: ./Writeup_IV/CLD_Rwd.png "CLD_Rwd"
 
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/432/view) Points
@@ -82,30 +84,16 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 
 #### Creation of the Training Set & Training Process
 
-To capture good driving behavior, recorded 8 laps on track one using center lane driving in forward direction. 
+To capture good driving behavior the following steps were implemented for data collection:
+* Recorded 8 laps on track one using center lane driving in forward direction
+* Recorded 8 laps on track one using center lane driving in reverse direction. To minimize left-turn bias in the data.
+* Further data augumentation was performed using "cv2" vertical flip on all of the images.
 
-Here is an example image of center lane driving:
+Below are few examples of center lane driving in forward direction
+![][image3]
+Below are few examples of center lane driving in reverse direction
+![][image4]
 
-![alt text][image2]
+After the collection process, I had X number of data points. Finally, the dataset was shuffled randomly and allocated 20% of the data into a validation set. 
 
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
-
-![alt text][image3]
-![alt text][image4]
-![alt text][image5]
-
-Then I repeated this process on track two in order to get more data points.
-
-To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
-
-![alt text][image6]
-![alt text][image7]
-
-Etc ....
-
-After the collection process, I had X number of data points. I then preprocessed this data by ...
-
-
-I finally randomly shuffled the data set and put Y% of the data into a validation set. 
-
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by ... I used an adam optimizer so that manually training the learning rate wasn't necessary.
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was determined to be about 5. I used an adam optimizer so that manually training the learning rate wasn't necessary.
