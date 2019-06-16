@@ -90,10 +90,14 @@ To capture good driving behavior the following steps were implemented for data c
 * Further data augumentation was performed using "cv2" vertical flip on all of the images.
 
 Below are few examples of center lane driving in forward direction
+
 ![][image3]
+
+
 Below are few examples of center lane driving in reverse direction
+
 ![][image4]
 
-After the collection process, I had X number of data points. Finally, the dataset was shuffled randomly and allocated 20% of the data into a validation set. 
+After collection and data augumentation process, a total of 34,660 number of data points represented the complete data set. Finally, the dataset was shuffled randomly and allocated 20% of the data into a validation set. 
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was determined to be about 5. I used an adam optimizer so that manually training the learning rate wasn't necessary.
