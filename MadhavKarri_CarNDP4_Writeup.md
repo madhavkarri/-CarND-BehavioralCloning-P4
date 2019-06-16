@@ -5,7 +5,7 @@
 
 Overview
 ---
-In this project, use deep neural networks and convolutional neural networks to classify traffic signs. Train and validate a model so it can classify traffic sign images using the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). Use the trained model to predict and classify German traffic sign images from the web.
+Develop a convolutional neural networks using keras to clone driving behavior. Train, validate and test a model using Keras. The model will output a steering angle to an autonomous vehicle.
 
 The Project
 ---
@@ -29,12 +29,12 @@ The goals/steps for this project:
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/432/view) Points
 
-### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.
+### Consider the rubric points individually and describe how each point has been addressed.
 
 ---
 ### Files Submitted & Code Quality
 
-#### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
+#### 1. Files included with submission to run the simulator in autonomous mode
 
 Project includes the following files:
 * model.py containing the script to create and train the model
@@ -42,19 +42,24 @@ Project includes the following files:
 * model.h5 containing a trained convolution neural network 
 * MadhavKarri_CarNDP4_Writeup.md summarizes the results
 
-#### 2. Submission includes functional code
+#### 2. Functional code
 Using the Udacity provided simulator and drive.py file, the car can be driven autonomously around the track by executing 
 ```sh
 python drive.py model.h5
 ```
 
-#### 3. Submission code is usable and readable
+#### 3. Project code (model.py)
 
-The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
+The model.py file contains the code for the following set of tasks.
+* Load all images and steering angles from memory
+* Data augumentation using vertical flip
+* Data normilization and centering
+* Image cropping to retain, only pixels that contain useful information 
+* Training, validation, and saving the convolution neural network model. 
 
 ### Model Architecture and Training Strategy
 
-#### 1. An appropriate model architecture has been employed
+#### 1. Model architecture 
 
 My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
 
