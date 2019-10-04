@@ -1,5 +1,5 @@
 # **Self-Driving Car Engineer Nanodegree**
-# **Project4: Behavioral Cloning**
+# **Project: Behavioral Cloning**
 
 ## MK
 
