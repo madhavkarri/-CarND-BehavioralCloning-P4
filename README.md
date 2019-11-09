@@ -23,8 +23,7 @@ The goals/steps for this project:
 [image3]: ./Writeup_IV/CLD_Fwd.png "CLD_Fwd"
 [image4]: ./Writeup_IV/CLD_Rwd.png "CLD_Rwd"
 
----
-### Files Submitted & Code Quality
+#
 
 #### 1. Files included with submission to run the simulator in autonomous mode
 
@@ -32,7 +31,7 @@ Project includes the following files:
 * model.py containing the script to create and train the model
 * drive.py for driving the car in autonomous mode
 * model.h5 containing a trained convolution neural network 
-* MadhavKarri_CarNDP4_Writeup.md summarizes the results
+* README.md summarizes the results
 * Final output video [Link](./Writeup_IV/video.mp4)
 
 #### 2. Functional code
