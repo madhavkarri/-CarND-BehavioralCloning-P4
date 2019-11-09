@@ -64,7 +64,7 @@ The model used an adam optimizer, so the learning rate was not tuned manually
 
 #### 3. Appropriate training data
 
-Training data was collected to keep the vehicle driving on the road. Used only center lane driving. For details about how I created the training data, see the next section. 
+Training data was collected with the objective to sustain vehicle driving within road boundaries. Used only center lane image data for training. For details on how training data was collected, refer to next section
 
 ### Model Architecture and Training Strategy
 
