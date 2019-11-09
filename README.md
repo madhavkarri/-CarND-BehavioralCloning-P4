@@ -23,11 +23,6 @@ The goals/steps for this project:
 [image3]: ./Writeup_IV/CLD_Fwd.png "CLD_Fwd"
 [image4]: ./Writeup_IV/CLD_Rwd.png "CLD_Rwd"
 
-
-## [Rubric](https://review.udacity.com/#!/rubrics/432/view) Points
-
-### Consider the rubric points individually and describe how each point has been addressed.
-
 ---
 ### Files Submitted & Code Quality
 
