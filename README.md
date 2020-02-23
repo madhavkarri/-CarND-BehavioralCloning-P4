@@ -1,4 +1,3 @@
-# **Self-Driving Car**
 # **Project: Behavioral Cloning**
 
 ## MK
